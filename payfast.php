@@ -226,7 +226,7 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
             {
                 case 'COMPLETE':
                     pflog( '- Complete' );
-                    pflog( 'PayPal transaction id: '.$pfData['pf_payment_id'] );
+                    pflog( 'PayFast transaction id: '.$pfData['pf_payment_id'] );
 
                     $history = new stdClass();
                     $history->notified = 0;
