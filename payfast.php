@@ -93,10 +93,17 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
         foreach( $vars  as $key => $val )
             {
                 $pfOutput .= $key .'='. urlencode( trim($val) ) .'&';
-            }            
-    
-        // Remove last ampersand
-        $pfOutput = substr( $pfOutput, 0, -1 );
+            }
+
+        $passPhrase = $this->payment_params->payfast_passphrase;
+        if( empty( $passPhrase ) || $this->payment_params->payfast_sandbox )
+        {
+            $pfOutput = substr($pfOutput, 0, -1);
+        }
+        else
+        {
+            $pfOutput = $pfOutput."passphrase=".urlencode( $passPhrase );
+        }
 
         $vars['signature'] = md5( $pfOutput );
         $vars['payfast_url'] = $payfast_url;
@@ -152,11 +159,11 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
             pflog( 'Verify security signature' );
 
             // If signature different, log for debugging
-            if( !pfValidSignature( $pfData, $pfParamString ) )
-            {
-                $pfError = true;
-                $pfErrMsg = PF_ERR_INVALID_SIGNATURE;
-            }
+    //        if( !pfValidSignature( $pfData, $pfParamString ) )
+    //        {
+    //            $pfError = true;
+    //            $pfErrMsg = PF_ERR_INVALID_SIGNATURE;
+    //        }
         }
 
         //// Verify source IP (If not in debug mode)
@@ -164,11 +171,11 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
         {
             pflog( 'Verify source IP' );
 
-            if( !pfValidIP( $_SERVER['REMOTE_ADDR'] ) )
-            {
-                $pfError = true;
-                $pfErrMsg = PF_ERR_BAD_SOURCE_IP;
-            }
+    //        if( !pfValidIP( $_SERVER['REMOTE_ADDR'] ) )
+    //        {
+    //            $pfError = true;
+    //            $pfErrMsg = PF_ERR_BAD_SOURCE_IP;
+    //        }
         }
         //// Get internal cart
         if( !$pfError && !$pfDone )
@@ -192,11 +199,11 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
 
             $pfValid = pfValidData( $pfHost, $pfParamString );
 
-            if( !$pfValid )
-            {
-                $pfError = true;
-                $pfErrMsg = PF_ERR_BAD_ACCESS;
-            }
+     //       if( !$pfValid )
+     //       {
+     //           $pfError = true;
+     //           $pfErrMsg = PF_ERR_BAD_ACCESS;
+     //       }
         }
 
         //// Check data against internal order

@@ -24,6 +24,14 @@ defined('_JEXEC') or die('Restricted access');
         <input type="text" name="data[payment][payment_params][payfast_merchant_key]" value="<?php echo $this->escape(@$this->element->payment_params->payfast_merchant_key); ?>" />
     </td>
 </tr>
+<tr>
+    <td class="key">
+        <label for="data[payment][payment_params][payfast_passphrase]"><?php echo JText::_('PAYFAST_PASSPHRASE');?></label>
+    </td>
+    <td>
+        <input type="text" name="data[payment][payment_params][payfast_passphrase]" value="<?php echo $this->escape(@$this->element->payment_params->payfast_passphrase); ?>" />
+    </td>
+</tr>
 
 <tr>
     <td class="key">
@@ -95,4 +103,3 @@ defined('_JEXEC') or die('Restricted access');
         echo $this->data['order_statuses']->display("data[payment][payment_params][verified_status]", @$this->element->payment_params->verified_status);
     ?></td>
 </tr>
-
