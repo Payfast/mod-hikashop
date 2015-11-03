@@ -106,6 +106,7 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
         }
 
         $vars['signature'] = md5( $pfOutput );
+        $vars['user_agent'] = 'HikaShop 2.2';
         $vars['payfast_url'] = $payfast_url;
 
         $this->vars = $vars;
