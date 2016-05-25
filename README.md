@@ -2,7 +2,7 @@ mod-hikashop
 ============
 PayFast HikaShop Payment Plugin v1.0.0 for HikaShop v2.2.3 - 2.5.0
 ------------------------------------------------------------------
-Copyright (c) 2010-2015 PayFast (Pty) Ltd
+Copyright (c) 2010-2016 PayFast (Pty) Ltd
 
 LICENSE:
 
@@ -29,6 +29,6 @@ You will need a working installation of Joomla and HikaShop in order to use the 
 *                                                         *
 *    Please see the URL below for further information:    *
 *                                                         *
-*      http://www.payfast.co.za/developers/hikashop       *
+*      https://www.payfast.co.za/shopping-carts/hikashop/ *
 *                                                         *
 ***********************************************************
