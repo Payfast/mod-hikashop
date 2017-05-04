@@ -3,8 +3,9 @@
  * @package PayFast Plugin for HikaShop Joomla!
  * @version 1.0.0
  * @author  payfast.co.za
- * @copyright   (C) 2010-2014 All rights reserved.
- * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Copyright (c) 2008 PayFast (Pty) Ltd
+ * You (being anyone who is not PayFast (Pty) Ltd) may download and use this plugin / code in your own website in conjunction with a registered and active PayFast account. If your PayFast account is terminated for any reason, you may not use this plugin / code or part thereof.
+ * Except as expressly indicated in this licence, you may not use, copy, modify or distribute this plugin / code or part thereof in any way.
  */
 defined('_JEXEC') or die('Restricted access');
 ?><?php
