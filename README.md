@@ -20,9 +20,9 @@ You will need a working installation of Joomla and HikaShop in order to use the 
 
 
 ***********************************************************
-*                                                         *
-*    Please see the URL below for further information:    *
-*                                                         *
-*      https://www.payfast.co.za/shopping-carts/hikashop/ *
-*                                                         *
+
+    Please see the URL below for further information:
+
+      https://www.payfast.co.za/shopping-carts/hikashop/
+
 ***********************************************************
