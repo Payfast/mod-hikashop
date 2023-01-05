@@ -25,7 +25,8 @@ defined('_JEXEC') or die('Restricted access');
             foreach($this->vars as $name => $value ) {
                 echo '<input type="hidden" name="'.$name.'" value="'.$value.'" />';
             }
-            JRequest::setVar('noform',1); ?>
+            $app = JFactory::getApplication();
+            $app->input->set('noform',1); ?>
     </form>
     <script type="text/javascript">
         <!--
