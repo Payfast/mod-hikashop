@@ -307,7 +307,8 @@ class plgHikashoppaymentPayfast extends hikashopPaymentPlugin
 
      function onPaymentConfiguration( &$element )
     {
-        $subtask = JRequest::getCmd( 'subtask', '' );
+        $app = JFactory::getApplication();
+        $subtask = $app->input->getCmd( 'subtask', '' );
 
         parent::onPaymentConfiguration( $element );
     }
