@@ -1,6 +1,5 @@
 # mod-hikashop
 
-============
 PayFast HikaShop Payment Plugin v1.0.0 for HikaShop v2.2.3 - 2.5.0
 ------------------------------------------------------------------
 Copyright (c) 2008 PayFast (Pty) Ltd
