@@ -1,4 +1,5 @@
-mod-hikashop
+# mod-hikashop
+
 ============
 PayFast HikaShop Payment Plugin v1.0.0 for HikaShop v2.2.3 - 2.5.0
 ------------------------------------------------------------------
@@ -18,11 +19,4 @@ You will need a working installation of Joomla and HikaShop in order to use the 
 5. Select ZAR and leave the remaining fields as they are in order to test the plugin in sandbox mode.
 6. Once you are ready to go live, input your merchant ID and Key, as well as passphrase if it is set on your PayFast account and set sandbox to 'No'
 
-
-***********************************************************
-
-    Please see the URL below for further information:
-
-      https://www.payfast.co.za/shopping-carts/hikashop/
-
-***********************************************************
+Please [click here](https://payfast.io/integration/shopping-carts/hikashop/) for more information concerning this module.
