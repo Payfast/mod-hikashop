@@ -1,0 +1,8 @@
+=====================================
+Date	  : Version: Description
+=====================================
+
+2024-07-29: 1.5.0 : Payfast Common library integration.
+                    New branding changes.
+                    Tested with HikaShop 5.1.0.
+                    PHP 8.1 upgrade.
