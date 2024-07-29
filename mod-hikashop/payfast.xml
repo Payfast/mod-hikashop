@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2024 Payfast (Pty) Ltd-->
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">
+    <name>Hikashop Payfast Payment Plugin</name>
+    <creationDate>January 2014</creationDate>
+    <version>1.5.0</version>
+    <author>Payfast</author>
+    <authorEmail>support@payfast.io</authorEmail>
+    <authorUrl>https://www.payfast.io</authorUrl>
+    <copyright>Copyright (c) 2024 Payfast (Pty) Ltd</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>This plugin enables you to setup your Payfast payment system with HikaShop</description>
+    <files>
+        <filename plugin="payfast">payfast.php</filename>
+        <filename>payfast_configuration.php</filename>
+        <filename>payfast_end.php</filename>
+        <filename>composer.json</filename>
+        <filename>index.html</filename>
+        <folder>vendor</folder>
+    </files>
+    <media folder="media" destination="com_hikashop/images/payment">
+        <filename>payfast.svg</filename>
+    </media>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_hikashoppayfast.ini</language>
+    </languages>
+    <params addpath="/components/com_hikashop/params">
+        <param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop"
+               description="HikaShop options"/>
+    </params>
+    <config>
+        <fields name="params" addfieldpath="/components/com_hikashop/fields">
+            <fieldset name="basic">
+                <field
+                        id="pluginoptions"
+                        name="pluginoptions"
+                        type="pluginoptions"
+                        label="hikashop"
+                        description="HikaShop options"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
