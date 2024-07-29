@@ -7,7 +7,7 @@ to [contact the Payfast support team](https://payfast.io/contact/) should you re
 
 ## Installation
 
-1. Upload and install the mod-hikashop.zip file via the extension manager to the back end of your website.
+1. Upload and install the [mod-hikashop.zip](https://github.com/Payfast/mod-hikashop/releases/download/v1.5.0/mod-hikashop.zip) file via the extension manager to the back end of your website.
 2. Still in extension manager, navigate to **Manage Extensions**, search for Payfast, and enable the Payfast plugin.
 3. Navigate to **Components** -> **HikaShop** -> **Configuration**, then select **System** -> **Currencies** and enable
    **ZAR**.
